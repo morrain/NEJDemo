@@ -1,0 +1,202 @@
+
+.m-page {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.m-page .m-nav {
+    flex: none;
+    width: 200px;
+    border-right: 1px solid #aaa;
+}
+
+.m-page .m-cnt {
+    flex: 1;
+    padding: 10px;
+}
+
+.m-page .m-cnt .m-cnt-tlt{
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+.m-page .m-cnt .m-cnt-tab{
+	border-bottom: 1px solid #aaa;
+}
+
+.m-page .m-cnt .m-cnt-tab li {
+    display: inline-block;
+    padding: 5px 30px;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    position: relative;
+    top: 1px;
+}
+
+.m-page .m-cnt .m-cnt-tab li.z-sel{
+	background:  #fff;
+}
+
+
+.m-nav-lst {
+    margin-top: 10px;
+}
+
+.m-nav-lst li {
+    color: #80b3e6;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.m-nav-lst li.z-sel {
+    background-color: #ddd;
+}
+
+
+.m-blog-box-nav {
+    font-size: 12px;
+    color: #5092e1;
+    padding-top: 16px;
+}
+.m-blog-box-nav li{
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.m-blog-box-nav li.z-sel{
+    color: #000;
+}
+
+.m-blog-page {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 75px);
+}
+
+.m-blog-page .m-up {
+    flex: none;
+    height: 45px;
+}
+
+.m-blog-page .m-down {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.m-blog-page .m-down .m-left {
+    flex: 1;
+}
+
+.m-blog-page .m-down .m-right {
+    flex: none;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.m-blog-page .m-blog-box{
+    height: 100%;
+}
+.m-blog-page .m-blog-list {
+    height: 100%;
+    background: #e6b8b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-blog-page .m-blog-clazz {
+    flex: 1;
+    background: #b8e6ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-blog-page .m-blog-tag {
+    flex: 1;
+    background: #c3437a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-tag-page{
+    display: flex;
+    height: calc(100% - 75px);
+    background: #41c355;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+li a{
+    color: #000;
+}
+
+.m-account-tab{
+    margin: 10px 0;
+}
+.m-account-tab li{
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+}
+.m-account-tab li:last-child{
+    border-right: none;
+}
+.m-setting-account{
+    height: calc(100% - 105px);
+}
+.m-setting-permission{
+    height: calc(100% - 105px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9e279c;
+    margin-top: 1px;
+}
+.m-setting-account .m-setting-account-pro,
+.m-setting-account .m-setting-account-edu{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 30px);
+    background: yellow;
+}
+.m-setting-account .m-setting-account-edu{
+    background: #999;
+}
+
+
+
+/* reset */
+html,body{height:100%}
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;outline:none}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:normal;}
+del,ins,u,s,a,a:hover,a:active,a:focus{text-decoration:none;outline:none;}
+body,textarea,input,button,select,keygen,legend{font:14px 'Microsoft YaHei','微软雅黑','宋体',helvetica,'Hiragino Sans GB';outline:0;}
+body{cursor:default;}
+input::-ms-clear,input::-ms-reveal{display:none;}
+button{border:0}input{$border-radius:2px;}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NEJ模块调度器</title>
+</head>
+
+<body>
+    <script>location.config = {root:'/src/html/'};</script>
+    <script type="text/javascript" src='./lib/nej/src/define.js?pro=/src/js/'></script>
+    <script type="text/javascript">
+    history.auto = !0;
+    NEJ.define([
+        'util/dispatcher/dispatcher',
+        'json!pro/config.json'
+    ], function(d, c) {
+    	d._$startup(c);
+    });
+    </script>
+</body>
+
+</html>
